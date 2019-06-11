@@ -55,7 +55,7 @@ ul {
 }
 
 .main-footer {
-    position: fixed;
+    position: relative ;
     height: 50px;
     background:#660035;
     padding: 2em 0;
@@ -95,8 +95,7 @@ ul {
     border: 3px solid #ffb3ff;
     box-shadow:0 5px 10px #ffb3ff;
     border-radius: 10px 20px;
-    width: 100%;
-    
+    /* margin-top:10%; */ 
 }
 
 
@@ -113,14 +112,10 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
 	background-color: #ddd;
 	outline: none;
   }
-  
-hr {
-	border: 1px solid #ffb3ff;
-	margin-bottom: 15px;
-  }
+
   
 
-button {
+.formbtn {
 	background-color: #660035;
 	color: white;
 	padding: 14px 20px;
@@ -128,6 +123,7 @@ button {
 	border: none;
 	cursor: pointer;
     width: 50%;
+    margin: auto;
   }
 
 @media (min-width: 769px) {
@@ -152,9 +148,10 @@ button {
     .signup-box{
         display: flex;
         flex-direction: column;
-        margin: auto;
+        justify-content: space-between;
+        margin:3% 25%;
         width: 50%;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .main-header{
