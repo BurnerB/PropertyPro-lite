@@ -12,8 +12,8 @@
         <header class = "main-header">
             <h1 class = "app-name"><a href = "index.html">PropertyPro-Lite</a></h1>
             <ul class = "main-nav">
-                <li><a href = "#">Home</a></li>
-                <li><a href = "#">Login</a></li>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "login.html">Login</a></li>
             </ul>
         </header>
     </div>
@@ -22,33 +22,35 @@
 
     <form action="#" style="border:1px solid #ccc">
             <div class="signup-box">
-              <p>Please fill in this form to create an account.</p>
-              <hr>
+              <p>Please fill in this form to create an account</p>
           
               <label for="email"><b>Email</b></label>
               <input type="text" placeholder="Enter Email" name="email" required>
     
-              <label for="username"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="username" required>
+              <label for="firstname"><b>Firstname</b></label>
+              <input type="text" placeholder="Enter Firstname" name="firstname" required>
+
+              <label for="Lastname"><b>Lastname</b></label>
+              <input type="text" placeholder="Enter Lastname" name="lastname" required>
     
               <label for="Phonenumber"><b>Phone number</b></label>
               <input type="text" placeholder="Enter phonenumber" name="phonenumber" required>
+
+              <label for="Address"><b>Address</b></label>
+              <input type="text" placeholder="Enter Address" name="address" required>
           
               <label for="psw"><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
-          
-              <label for="psw-repeat"><b>Repeat Password</b></label>
-              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-              
-              <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-              </label>
               
               <p>Already have an account? <a href="login.html" style="color:dodgerblue">Log in</a></p>
           
-                <button type="submit" class="signupbtn">Sign Up</button>
+                <button type="submit" class="formbtn">Sign Up</button>
             </div>
     </form>
+
+    <footer class="main-footer">
+        <span>&copy;2019 barnabykamau@gmail.com.</span>
+    </footer>
 
 </body>
 </html>
