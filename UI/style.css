@@ -115,7 +115,7 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
 
   
 
-.formbtn {
+.formbtn,.markbtn {
 	background-color: #660035;
 	color: white;
 	padding: 14px 20px;
@@ -150,26 +150,20 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
     overflow: hidden;
 }
 
-.adverts{
-    border-left-style: groove;
-    padding: 0em;
-    margin: 1em 3em;
-    border-left: 2px solid #999;
-    padding-left: 1em;
-}
+
 
 .property {
 	padding: 1em;
-	background: #BBB5B5;
+	background: #ddd;
 	border-radius: .35em;
     margin: 10px 10px;
     cursor: pointer;
 }
 
-.property:hover{
+/* .property:hover{
 	transform: scale(1.1);
 	transition: all ease 500ms;
-}
+} */
 
 #one{
     background-image:url(mud.jpg);
@@ -219,18 +213,37 @@ table {
     flex-direction: column;
 }
 
-/* .edit-form input{
-    width:50%;
-} */
-    /* flex-direction: column; */
-    /*  */
-    /* margin:3% 25%; */
-@media (max-width: 575px) {
-    .adverts{
-        display: flex;
-        flex-direction: column;
-      }
 
+.markbtn,.button{
+    background-color: green;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.button1{
+    font-size: 15px;
+    color: #fff;
+    border-radius: 8px;
+    background-color: green;
+    cursor: pointer;
+}
+
+.btnsold{
+    background-color: red;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+}
+
+.vacant,.sold{
+    border-left-style: groove;
+    padding: 0em;
+    margin: 1em 3em;
+    border-left: 2px solid #999;
+    padding-left: 1em;
+}
+
+@media (max-width: 575px) {
     .property{
         height:200px;
         margin: 0;
@@ -245,18 +258,38 @@ table {
         width:auto;
         margin: 0;
         margin-left:10px; 
+        margin-bottom: 25px;
     }
+
+    .adverts{
+        display: flex;
+        flex-direction: column;
+      }
 
     .edit-form{
         width:auto;
         margin: 0;
         padding: 
     }
+
+    .vacant{
+        width:auto;
+        margin: 0;
+        margin-left:10px; 
+        margin-bottom: 25px;
+    }
+
+    .sold{
+        width:auto;
+        margin: 0;
+        margin-left:10px; 
+        margin-bottom: 25px;
+    }
 }
 
 
 @media (min-width: 769px) {
-    .main-header,.main-nav, .column{
+    .main-header,.main-nav, .column,.adverts{
       display: flex;
       flex-wrap: wrap;
     }
@@ -271,11 +304,11 @@ table {
         
     }
 
-    .adverts{
+    /* .adverts{
         display: flex;
         flex-direction: column;
       }
-    
+     */
       .property{
           height:400px;
       }
@@ -305,12 +338,20 @@ table {
 
     .adverts{
         display: flex;
-        /* flex-grow: 1; */
-        flex:1 1 30%;
-        height:auto;
-        flex-direction: column;
-        margin-left: 70%;
+        flex-grow: 1;
+        flex:1;
+        flex-direction: row;
     }
+
+    .vacant{
+        width: 25%;
+        
+    }
+
+    .sold{
+        width: 25%;
+    }
+
     .property{
         height: 200px;
     }
