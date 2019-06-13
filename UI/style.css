@@ -115,7 +115,7 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
 
   
 
-.formbtn,.markbtn {
+.formbtn,.markbtn,.markbtn2 {
 	background-color: #660035;
 	color: white;
 	padding: 14px 20px;
@@ -214,18 +214,21 @@ table {
 }
 
 
-.markbtn,.button{
+.markbtn,.markbtn2,.button{
     background-color: green;
     margin-top: 20px;
     width: 100%;
 }
-
-.button1{
+.button1,.button2{
     font-size: 15px;
     color: #fff;
     border-radius: 8px;
     background-color: green;
     cursor: pointer;
+}
+
+.markbtn2,.button2{
+    background-color: red;
 }
 
 .btnsold{
