@@ -6,6 +6,7 @@ body{
     margin: 0;
     padding:0;
     font: 1em/1.5 "Quicksand", "Lato", sans-serif;
+    overflow-x: hidden;
 }
 #header{
     background-color:#660035;
@@ -81,7 +82,6 @@ ul {
     width:85%;
     margin: 0;
     overflow: hidden;
-
 }
 
 .form-box{
@@ -123,21 +123,22 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
 	border: none;
 	cursor: pointer;
     width: 50%;
-    margin: auto;
+    display:block;
+    margin: 0 auto;
   }
 
-  #banner {
+#banner {
     height: 80vh;
     width: 100vw;
     background-image: url('Bomas-of-Kenya.jpg');
-    background-size: cover;
+    background-size:cover;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;
+    
 }
 
 #banner-inner h1 {
@@ -149,9 +150,115 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
     overflow: hidden;
 }
 
+.adverts{
+    border-left-style: groove;
+    padding: 0em;
+    margin: 1em 3em;
+    border-left: 2px solid #999;
+    padding-left: 1em;
+}
+
+.property {
+	padding: 1em;
+	background: #BBB5B5;
+	border-radius: .35em;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.property:hover{
+	transform: scale(1.1);
+	transition: all ease 500ms;
+}
+
+#one{
+    background-image:url(mud.jpg);
+    background-size: cover;
+}
+
+#two{
+    background-image:url(hut2.jpg);
+    background-size: cover;
+}
+
+.column {
+    display: flex;
+    flex-grow: 1;
+    border: none;
+}
+
+.property-profile{
+    border-right-style: groove;
+    padding: 0em;
+    margin: 1em 3em;
+    border-right: 2px solid #999;
+    padding-right: 1em;
+    width: 30%;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {background-color:#f5f5f5;}
+
+.edit-form{
+    margin: 1em 3em;
+    width: 40%;
+    background: #fff;
+    padding: 30px;
+    border: 3px solid #999;
+    box-shadow:0 5px 10px #999;
+    border-radius: 10px 20px;
+    flex-direction: column;
+}
+
+/* .edit-form input{
+    width:50%;
+} */
+    /* flex-direction: column; */
+    /*  */
+    /* margin:3% 25%; */
+@media (max-width: 575px) {
+    .adverts{
+        display: flex;
+        flex-direction: column;
+      }
+
+    .property{
+        height:200px;
+        margin: 0;
+        margin-bottom:20px; 
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .property-profile{
+        width:auto;
+        margin: 0;
+        margin-left:10px; 
+    }
+
+    .edit-form{
+        width:auto;
+        margin: 0;
+        padding: 
+    }
+}
+
+
 @media (min-width: 769px) {
-    .main-header,.main-nav{
+    .main-header,.main-nav, .column{
       display: flex;
+      flex-wrap: wrap;
     }
 
     .main-header {
@@ -161,8 +268,23 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
 
     .form-box{
         display: inline-flex;
-        flex-wrap: wrap; 
-    } 
+        
+    }
+
+    .adverts{
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .property{
+          height:400px;
+      }
+    /* .edit-form{
+        height:auto;
+    }
+    .property-profile{
+        height:auto;
+    }  */
 
 }
 
@@ -176,9 +298,38 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
         width: 50%;
         /* justify-content: center; */
     }
-
     .main-header{
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .adverts{
+        display: flex;
+        /* flex-grow: 1; */
+        flex:1 1 30%;
+        height:auto;
+        flex-direction: column;
+        margin-left: 70%;
+    }
+    .property{
+        height: 200px;
+    }
+
+   
+        /* margin:3% 25%; */
+        /* width: 100%; */
+    /* .column{
+        margin-right: auto;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+    .edit-form{
+        height:auto;
+    }
+    .property-profile{
+        height:auto;
+    } */
 }
