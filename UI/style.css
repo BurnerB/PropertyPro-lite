@@ -285,45 +285,58 @@ table {
 
 .span{
     background: #fff;
-    padding: 0;
-    width: 100%;
+    padding: 10px;
     float: left;
-    margin-top: 50px;
-    
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    width: 100%; 
 }
 
 .span input{
-    width: 400px;
-    margin-bottom: 0;
+    width: 50%;
     height: 45px;
     float: left;
     font-size: 13px;
     border: none;
     padding-left: 20px;
+    background-color: #ddd;
+
 }
 
 .span span{
-    width: auto;
+    width: 20%;
     float: left;
-    margin-right: -1px;
     padding-right: 15px;
-    border-left: solid 1px #b2b2b2;
+    padding-left: 15px;
+    border-left: solid 1px #ddd;
     }
 .span select{
     border: none;
     border-radius: 0;
-    background: #fff;
+    background: #ddd;
     height: 45px;
     width: 100%;
+    background-color: #ddd;
 }
 
-/* .span option{
-    position: relative;
-    z-index: 2;
-} */
+.span button{
+  width: 10%;
+  padding: 10px;
+  background: #660035;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
 
+.main-nav input{
+    width:400px;
+    padding-left:25px;
+}
 
-@media (min-width: 575px) {
+@media (max-width: 575px) {
     .property{
         height:200px;
         margin: 0;
@@ -393,7 +406,7 @@ table {
           height:400px;
       }
       .row {
-        display: flex;
+        display: flexl;
 		width: 90%;
 		margin: 0 auto;
     }
@@ -402,6 +415,7 @@ table {
         display: inline-flex;
         flex: auto;
         height:100px;
+     
     }
 }
 
