@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PropertyPro-Lite</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+</head>
+<body>
+    <div id = "header">
+        <header class = "main-header">
+            <h1 class = "app-name"><a href = "../index.html">PropertyPro-Lite</a></h1>
+            <ul class = "main-nav">
+                <li><a href = "../agent/index.html">Back</a></li>
+                <li><a href = "../index.html">Home</a></li>
+                <li><a href = "../index.html">Logout</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="row">
+        <div class="column1">
+            <button type="submit" class="markbtn">Sold</button>
+            <button type="submit" class="markbtn2">Delete</button>
+            <h4>Property Details</h4>
+            <img src="../assets/img/mud.jpg" alt="Hut" style="width:320px;height:auto;max-width: 300px;" > 
+            <table>
+                <tr>
+                <td>Owner</td>
+                <td>T'chaka</td>        
+                </tr>
+
+                <tr>
+                <td>Price</td>
+                <td>5000 000</td>
+            
+                </tr>
+                <tr>
+                <td>State</td>
+                <td>Wakanda</td>
+                
+                </tr>
+                <tr>
+                <td>City</td>
+                <td>Wakanda City</td>
+                
+                </tr>
+                <tr>
+                <td>Type</td>
+                <td>3-bedroom</td>
+                </tr>
+                <tr>
+                    <td>Image Url</td>
+                    <td>https://www.google.com/search?q=wakanda&imgrc=3Ju9k-4cMHO-ZM:</td>
+                </tr>
+            </table>
+        </div>
+        <div class = "column2">
+            <form action="#"  class ="edit-form" style="border:1px solid #ccc">
+                    <h4>Edit Details of Property</h4>                
+                    <label for="owner_name"><b>Owners Name</b></label>
+                    <input type="text" placeholder="Enter your name" name="owner_name" required>
+
+                    <label for="price"><b>Price</b></label>
+                    <input type="number" placeholder="Enter price" name="price" required>
+
+                    <label for="State"><b>State</b></label>
+                    <input type="text" placeholder="Enter State where property located" name="State" required>
+
+                    <label for="city"><b>City</b></label>
+                    <input type="text" placeholder="Enter city where property located" name="city" required>
+
+                    <label for="type"><b>Type</b></label>
+                    <input type="text" placeholder="Enter type of property" name="State" required>
+
+                    <label for="image_url"><b>Image Url</b></label>
+                    <input type="text" placeholder="image url should be less than 50 characters" name="image_url" required>
+                
+                
+                        <button type="submit" class="formbtn">SAVE</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <span>&copy;2019 barnabykamau@gmail.com.</span>
+    </footer>
+
+</body>
+</html>
