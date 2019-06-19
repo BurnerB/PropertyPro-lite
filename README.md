@@ -7,7 +7,7 @@
 Property Pro Lite is a platform where people can create and/or search properties for sale or rent.
 
 ## Hosted on Github pages
-* [Homepage](hhttps://burnerb.github.io/PropertyPro-lite/UI/index.html) this acts as the landing page,advertised properties can be seen and searched on this page.
+* [Homepage](https://burnerb.github.io/PropertyPro-lite/UI/index.html) this acts as the landing page,advertised properties can be seen and searched on this page.
 * [Post Advert](https://burnerb.github.io/PropertyPro-lite/UI/advert/index.html) here agents can post new adverts on properties.
 * [signup](https://burnerb.github.io/PropertyPro-lite/UI/signup/index.html) here new users can signup
 * [login](https://burnerb.github.io/PropertyPro-lite/UI/login/index.html) here existing users and agents can login
