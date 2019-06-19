@@ -1,8 +1,8 @@
 # PropertyPro-lite
 
-![GitHub pull requests](https://img.shields.io/github/issues-pr/BurnerB/PropertyPro-lite.svg)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/BurnerB/PropertyPro-lite.svg)
-![Website](https://img.shields.io/website/https/burnerb.github.io/PropertyPro-lite/UI/index.html.svg)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/BurnerB/PropertyPro-lite.svg)](https://github.com/BurnerB/PropertyPro-lite/pulls?q=is%3Aopen+is%3Apr)
+[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/BurnerB/PropertyPro-lite.svg)](https://github.com/BurnerB/PropertyPro-lite/pulls?q=is%3Apr+is%3Aclosed)
+[![Website](https://img.shields.io/website/https/burnerb.github.io/PropertyPro-lite/UI/index.html.svg)](https://burnerb.github.io/PropertyPro-lite/UI/index.html)
 
 Property Pro Lite is a platform where people can create and/or search properties for sale or rent.
 
