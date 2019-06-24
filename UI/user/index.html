@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PropertyPro-Lite</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
 </head>
 <body>
@@ -75,13 +76,34 @@
                 </tr>
                 </table>
                 <button type="submit" class="markbtn">Contact Agent</button>
-                <button type="submit" class="markbtn2">Mark as Fraudulent</button>
+                <button type="submit" class="markbtn2" id="myBtn">Mark as Fraudulent</button>
         </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div id="modal-content" class="modal-content"></div>
+            <form action="#" style="border:1px solid #ccc">
+                <div class="form-box">
+                <span class="close">&times;</span>
+                  <h4>Please fill the form below</h4>
+              
+                  <label for="text"><b>Reason</b></label>
+                  <input type="text" placeholder="e.g pricing, weird demands, etc" name="reason" required>
+    
+                  <label for="Description"><b>Description</b></label>
+                  <textarea rows="10" cols="50" name="Description" placeholder="Enter description here..."></textarea>
+              
+                    <button type="submit" class="formbtn">Report</button>
+                </div>
+        </form>
+        </div>
+      
     </div>
 
     <footer class="main-footer">
         <span>&copy;2019 barnabykamau@gmail.com.</span>
     </footer>
+
+    <script src="../assets/scripts/main.js"></script>
 
 </body>
 </html>
