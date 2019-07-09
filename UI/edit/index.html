@@ -34,8 +34,6 @@
 
     <div class="row">
         <div class="column1">
-            <button type="submit" class="markbtn">Sold</button>
-            <button type="submit" class="markbtn2">Delete</button>
             <h4>Property Details</h4>
             <img src="../assets/img/mud.jpg" alt="Hut" style="width:320px;height:auto;max-width: 300px;" > 
             <table>
@@ -68,27 +66,26 @@
                     <td>https://www.google.com/search?q=wakanda&imgrc=3Ju9k-4cMHO-ZM:</td>
                 </tr>
             </table>
+            <button type="submit" class="markbtn">Sold</button>
+            <button type="submit" class="markbtn2">Delete</button>
         </div>
         <div class = "column2">
             <form action="#"  class ="edit-form" style="border:1px solid #ccc">
                     <h4>Edit Details of Property</h4>                
-                    <label for="owner_name"><b>Owners Name</b></label>
-                    <input type="text" placeholder="Enter your name" name="owner_name" required>
-
                     <label for="price"><b>Price</b></label>
-                    <input type="number" placeholder="Enter price" name="price" required>
+                    <input type="number" value="5000000" name="price" required>
 
                     <label for="State"><b>State</b></label>
-                    <input type="text" placeholder="Enter State where property located" name="State" required>
+                    <input type="text" value="Wakanda" name="State" required>
 
                     <label for="city"><b>City</b></label>
-                    <input type="text" placeholder="Enter city where property located" name="city" required>
+                    <input type="text" value="Wakanda City" name="city" required>
 
                     <label for="type"><b>Type</b></label>
-                    <input type="text" placeholder="Enter type of property" name="State" required>
+                    <input type="text" value="3 bedroom" name="State" required>
 
                     <label for="image_url"><b>Image Url</b></label>
-                    <input type="text" placeholder="image url should be less than 50 characters" name="image_url" required>
+                    <input type="text" value="https://www.google.com/search?q=wakanda&imgrc=3Ju9k-4cMHO-ZM:" name="image_url" required>
                 
                 
                         <button type="submit" class="formbtn">SAVE</button>
